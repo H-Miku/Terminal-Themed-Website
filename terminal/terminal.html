@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="terminal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function textfocus() {
+      document.getElementById("user-input").focus();
+    }
+
+    // Define the init function
+    function init() {
+      console.log("Initialization function called.");
+      // Any additional initialization code can go here
+    }
+
+    // Optionally, define the load function if needed
+    function load() {
+      console.log("Load function called.");
+      // Any additional load-related code can go here
+    }
+
+    // Ensuring that textfocus works on load
+    window.onload = function() {
+      init();
+      load();
+      textfocus();
+    };
+  </script>
+</head>
+
+<body>
+
+  <header class="header">
+    <!--back button-->
+    <i class="fa fa-arrow-left" id="backButton"></i>
+
+    <div class="circle red"></div>
+    <div class="circle green"></div>
+    <div class="circle yellow"></div>
+  </header>
+
+  </header>
+  <div style="position:relative;">
+    <canvas id="inp"></canvas>
+    <div style="position:absolute;top:20px;" id="content">
+      <p id="out" onclick="textfocus()"></p>
+      <!--  <textarea id="user-input" spellcheck="false" autofocus="on" autocomplete="off" autocapitalize="off"></textarea>-->
+    </div>
+  </div>
+  <div id="cmdbar">
+    <!-- <textarea id="user-input" spellcheck="false" autofocus="on" autocomplete="off" autocapitalize="off"></textarea>-->
+    <input type="text" id="user-input" spellcheck="false" autofocus="on" autocomplete="off" placeholder="enter command here...">
+  </div>
+  <script src="terminal.js" defer>
+
+  </script>
+</body>
+
+</html>

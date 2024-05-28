@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal Style Website</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+</head>
+
+<body>
+  <div class="terminal">
+    <div class="header">
+      <span class="header-title">SPECTRE - ~/home</span>
+      <i class="fas fa-robot" id="bot"></i>
+    </div>
+    <div class="content">
+      <div class="nav">
+        <a href="#home" onclick="showSection('home')">Home</a> |
+        <a href="#about" onclick="showSection('about')">About Us</a> |
+        <a href="#signup" onclick="showSection('signup')">Sign Up</a>
+      </div>
+      <div id="home" class="section">
+        <p class="center-text large-text">MERCURIAL</p>
+        <p class="center-text">Step into the future of interactive communication with Mercurial, the chatbot that evolves with your needs. Whether you're looking for simple conversation or semi- advanced terminal functionalities, Mercurial offers a seamless transition between both, ensuring you have the power and flexibility at your fingertips.</p>
+
+        <button class="start-button" onclick="navigateToNewTab('/terminal/terminal.html')">Start</button>
+      </div>
+      <div id="about" class="section" style="display:none;">
+        <h2>About Us</h2>
+        <p>
+
+
+          "Welcome to Mercurial, where innovation meets creativity in a unique terminal-style website experience. At Mercurial, we are dedicated to merging technology with imagination, bringing together passionate developers, designers, and thinkers to deliver innovative solutions. 
+        </p>
+        <p>
+          Our mission is to simplify complexity, offering easy-to-use applications that empower individuals and organizations alike. Join us on our journey to make the digital world more accessible and enjoyable for everyone. Explore our terminal-inspired interface, dive into our curated content, and embark on a digital adventure like no other.
+        </p>
+      </div>
+      <div id="signup" class="section" style="display:none;">
+        <h2>Sign Up</h2>
+        <p>Join us today! Enter your details below:</p>
+        <form>
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username"><br><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+          <input type="submit" value="Sign Up">
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+  <script src="homepage.js"></script>
+  <script>
+    // Add event listener to the bot icon
+    document.getElementById('bot').addEventListener('click', function() {
+      window.location.href = '/bot/index.html'; // Redirect to the desired HTML file
+    });
+  </script>
+</body>
+
+</html>

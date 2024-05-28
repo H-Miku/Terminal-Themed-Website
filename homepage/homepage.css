@@ -1,0 +1,212 @@
+body {
+    background-color: #1d1f21;
+    color: #c5c8c6;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.terminal {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #282a36;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #5af78e;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-weight: bold;
+    color: #5af78e;
+    text-align: center;
+}
+
+.header i {
+    font-size: 1.5em;
+    color: #5af78e;
+}
+
+.header i:hover{
+color: #ff79c6;
+}
+.nav {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.nav a {
+    color: #5af78e;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #ff79c6;
+    text-decoration: underline;
+}
+
+.section {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.large-text {
+    font-size: 2em;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #1d1f21;
+    color: #c5c8c6;
+    border: 1px solid #5af78e;
+}
+
+form input[type="submit"] {
+    background-color: #1d1f21;
+    color: #5af78e;
+    border: 1px solid #5af78e;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5af78e;
+    color: #1d1f21;
+}
+
+/* Start Button */
+.start-button {
+    background-color: transparent;
+    color: #5af78e;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+    font-size: 1.2em;
+    border: none;
+}
+
+.start-button:hover {
+    background-color: #5af78e;
+    color: #1d1f21;
+}
+
+/* Footer and Social Icons */
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #5af78e;
+    margin: 0 10px;
+    transition: color 0.3s;
+    font-size: 1.5em;
+}
+
+.social-icons a:hover {
+    color: #ff79c6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .terminal {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .nav {
+        font-size: 0.9em;
+    }
+
+    .large-text {
+        font-size: 1.5em;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        width: 90%;
+    }
+
+    .social-icons a {
+        font-size: 1.2em;
+    }
+}
+
+
+/* Keyframes for typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+/* Center text horizontally */
+.large-text {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+    /* Adjustments for devices with a maximum width of 1200px */
+    .terminal {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /* Adjustments for devices with a maximum width of 900px */
+    .terminal {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjustments for devices with a maximum width of 600px */
+    .terminal {
+        max-width: 95%;
+    }
+
+    /* Other adjustments as needed for smaller screens */
+}
+
+@media only screen and (max-width: 400px) {
+    /* Adjustments for devices with a maximum width of 400px */
+    /* You can add specific styles for smaller screens here */
+}

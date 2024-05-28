@@ -1,0 +1,207 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #282a36;
+  font: 16px Courier;
+  font-weight: bold;
+
+}
+
+body {
+
+  margin: 0;
+  font-weight: bold;
+  ;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #282a36;
+  font: 16px Courier;
+  color: #5af78e;
+
+
+}
+
+
+i {
+  font-style: normal;
+  color: red;
+}
+
+w {
+  /* color: #0e0;*/
+  color: #5af78e;
+
+}
+
+p {
+  /*  color: #0e0;*/
+  color: #5af78e;
+  font-weight: bold;
+}
+
+#cmd {
+  width: calc(100% - 20px);
+  height: calc(100% - 60px);
+  margin: 0;
+  padding: 10px;
+  color: #5af78e;
+}
+
+#cmdbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  margin: 0;
+  width: calc(100% - 20px);
+  height: 40px;
+  background: transparent;
+  /* border-top: 1px solid #444;*/
+}
+
+#user-input:focus {
+  outline: none;
+}
+
+#user-input {
+  width: calc(100% - 10px);
+  height: 36px;
+  border: 1px solid #444;
+  background: #4c4c4c;
+  color: #5af78e;
+  outline: none;
+  padding-left: 8px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+
+}
+
+@-webkit-keyframes loader {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes loader {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+#inp-ggame {
+  width: 190px;
+  height: 24px;
+  background: #333;
+  border: 1px solid #444;
+  display: block;
+  outline: none;
+  color: #5af78e;
+  padding-left: 10px;
+}
+
+#btn-ggame {
+  margin: 10px 50px;
+  width: 100px;
+  height: 24px;
+  background: #444;
+  border: 1px solid #0e0;
+  display: block;
+}
+
+#btn-ggame:before {
+  content: 'Guess';
+  color: #5af78e;
+
+}
+
+y {
+
+  padding: 1.2px;
+
+  color: yellow;
+}
+
+c {
+  padding: 1.2px;
+  color: cyan;
+}
+
+r {
+  padding: 1.2px;
+  color: #ff5050;
+}
+
+o {
+  padding: 1.2px;
+  color: #ff9900;
+}
+
+w {
+  padding: 1.2px;
+  color: white;
+}
+
+lsk {
+  letter-spacing: 0px;
+  font-family: Consolas;
+}
+
+g {
+  color: #5af78e;
+
+  /*color: #5aff00;*/
+}
+
+
+/* Style for the header */
+/* Header styles */
+.header {
+  background-color: #282a36;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #5af78e;
+
+}
+
+/* Back icon style */
+.header i {
+  cursor: pointer;
+  color: #5af78e;
+}
+
+/* Circle styles */
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 4%;
+  /* Adjust spacing between circles */
+}
+
+/* Colors for circles */
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}

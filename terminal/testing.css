@@ -1,0 +1,125 @@
+/* Created by I am offline */
+
+
+
+* {
+  border: none;
+  font-family: Courier;
+  margin: 0;
+}
+
+body {
+  background: #000;
+  color: #76ff26;
+}
+
+canvas {
+  display: block;
+  border: none;
+  resize: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+#user-input:focus {
+  outline: none;
+}
+
+#user-input {
+  background-color: transparent;
+  border: none;
+  color: #5aff00;
+  resize: none;
+  font-family: Courier;
+  width: 98vw;
+  height: 50vh;
+  font-family: courier;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+p {
+  padding: 1.2px;
+  font-weight: bold;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 95vh;
+}
+
+#content {
+  margin-right: 1.9px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 95vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+}
+
+#content::-webkit-scrollbar {
+  display: none;
+}
+
+div {
+  height: 100%;
+}
+
+y {
+  padding: 1.2px;
+  color: yellow;
+}
+
+c {
+  padding: 1.2px;
+  color: cyan;
+}
+
+r {
+  padding: 1.2px;
+  color: #ff5050;
+}
+
+o {
+  padding: 1.2px;
+  color: #ff9900;
+}
+
+w {
+  padding: 1.2px;
+  color: white;
+}
+
+lsk {
+  letter-spacing: 0px;
+  font-family: Consolas;
+}
+
+g {
+  color: #5aff00;
+}
+
+#cmd {
+
+  width: calc(100% - 20px);
+
+  height: calc(100% - 60px);
+  margin: 0;
+  padding: 10px;
+  color: #eee;
+}
+
+#cmdbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  margin: 0;
+  width: calc(100% - 20px);
+  height: 40px;
+  background: #323232;
+  border-top: 1px solid #444;
+}
