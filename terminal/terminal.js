@@ -521,6 +521,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add event listener for click event
   backButton.addEventListener('click', function() {
     // Navigate back to the desired HTML file
-    window.location.href = '/homepage/homepage.html';
+    window.location.href = './homepage/homepage.html';
   });
 });
