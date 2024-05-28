@@ -7,6 +7,6 @@ function showSection(sectionId) {
 }
 
 function navigateToNewTab(url) {
-    window.location.href= '/terminal/terminal.html';
+    window.location.href= './terminal/terminal.html';
 }
 
